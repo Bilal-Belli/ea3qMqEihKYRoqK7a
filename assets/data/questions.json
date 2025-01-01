@@ -1,0 +1,74 @@
+{
+  "themes": [
+    {
+      "theme": "Geography",
+      "questions": [
+        {"questionText": "The Amazon River flows through Brazil.", "isCorrect": true},
+        {"questionText": "Africa is the largest continent by area.", "isCorrect": false},
+        {"questionText": "Mount Kilimanjaro is located in Tanzania.", "isCorrect": true},
+        {"questionText": "The Pacific Ocean is the largest ocean on Earth.", "isCorrect": true},
+        {"questionText": "The Sahara Desert is in South America.", "isCorrect": false}
+      ]
+    },
+    {
+      "theme": "History",
+      "questions": [
+        {"questionText": "The American Civil War ended in 1865.", "isCorrect": true},
+        {"questionText": "The Great Wall of China was built in the 20th century.", "isCorrect": false},
+        {"questionText": "The Roman Empire fell in 476 AD.", "isCorrect": true},
+        {"questionText": "Queen Victoria was the first ruler of the United Kingdom.", "isCorrect": false},
+        {"questionText": "The Cold War was a conflict between the USA and the USSR.", "isCorrect": true}
+      ]
+    },
+    {
+      "theme": "Literature",
+      "questions": [
+        {"questionText": "Mark Twain wrote 'The Adventures of Tom Sawyer'.", "isCorrect": true},
+        {"questionText": "George Orwell authored 'Pride and Prejudice'.", "isCorrect": false},
+        {"questionText": "Jane Austen is the author of 'Emma'.", "isCorrect": true},
+        {"questionText": "Homer wrote 'The Iliad'.", "isCorrect": true},
+        {"questionText": "F. Scott Fitzgerald wrote '1984'.", "isCorrect": false}
+      ]
+    },
+    {
+      "theme": "Music",
+      "questions": [
+        {"questionText": "The Beatles were a British band.", "isCorrect": true},
+        {"questionText": "Beethoven was a famous violinist.", "isCorrect": false},
+        {"questionText": "Michael Jackson was known as the 'King of Pop'.", "isCorrect": true},
+        {"questionText": "Freddie Mercury was the lead singer of Queen.", "isCorrect": true},
+        {"questionText": "Mozart was born in Austria.", "isCorrect": true}
+      ]
+    },
+    {
+      "theme": "Science",
+      "questions": [
+        {"questionText": "Water boils at 100°C at sea level.", "isCorrect": true},
+        {"questionText": "The human body has 206 bones.", "isCorrect": true},
+        {"questionText": "The speed of sound is faster than the speed of light.", "isCorrect": false},
+        {"questionText": "Photosynthesis occurs in plants.", "isCorrect": true},
+        {"questionText": "Atoms are made up of protons, neutrons, and electrons.", "isCorrect": true}
+      ]
+    },
+    {
+      "theme": "Sports",
+      "questions": [
+        {"questionText": "Soccer is also known as football in most countries.", "isCorrect": true},
+        {"questionText": "The Olympic Games are held every 2 years.", "isCorrect": false},
+        {"questionText": "The Super Bowl is the championship game of American football.", "isCorrect": true},
+        {"questionText": "The FIFA World Cup is held every 4 years.", "isCorrect": true},
+        {"questionText": "Roger Federer is a famous basketball player.", "isCorrect": false}
+      ]
+    },
+    {
+      "theme": "Technology",
+      "questions": [
+        {"questionText": "The first iPhone was released in 2007.", "isCorrect": true},
+        {"questionText": "Python is a type of database.", "isCorrect": false},
+        {"questionText": "The World Wide Web was invented by Tim Berners-Lee.", "isCorrect": true},
+        {"questionText": "HTML is used for creating web pages.", "isCorrect": true},
+        {"questionText": "Blockchain is a type of programming language.", "isCorrect": false}
+      ]
+    }
+  ]
+}
