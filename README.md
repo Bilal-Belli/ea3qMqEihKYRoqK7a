@@ -1,16 +1,4 @@
-# tp1
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## This was part of an assignment
+<div align="center">
+  <video src='https://github.com/user-attachments/assets/ffaca8f6-0288-4419-bd94-5e5ba1730337' width="180" />
+</div>
