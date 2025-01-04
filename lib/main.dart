@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
-import 'ProfileHomePage.dart';
-import 'QuizzApp.dart';
+import 'package:provider/provider.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'Question1/presentation/screens/QuizAppProviders.dart';
+import 'Question2/presentation/pages/ThemeSelectionPageBLoC.dart';
+import 'Question1/data/providers/QuizProvider.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDateFormatting('fr_FR', null);
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Combined App',
-      theme: ThemeData(
-        brightness: Brightness.light,
-        textTheme: const TextTheme(
-          bodyMedium: TextStyle(color: Colors.black),
-        ),
+    return ChangeNotifierProvider(
+      create: (_) => QuizProvider(),
+      child: MaterialApp(
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
+        home: const HomePage(),
       ),
-      home: const HomePage(),
     );
   }
 }
@@ -27,60 +32,63 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.white;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TP1', style: TextStyle(color: Colors.white)),
+        title: const Text('TP2', style: TextStyle(color: Colors.white)),
         centerTitle: true,
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.purpleAccent,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              width: 300,
               height: 60,
+              width: 300,
               child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purpleAccent,
+                ),
+                label: const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Quiz avec Provider',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const ProfileHomePage()),
+                    MaterialPageRoute(
+                      builder: (context) => const QuizAppProdivers(),
+                    ),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent,
-                ),
-                label: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Profile Card',
-                    style: TextStyle(fontSize: 18, color: textColor),
-                  ),
-                ),
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             SizedBox(
-              width: 300,
               height: 60,
+              width: 300,
               child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purpleAccent,
+                ),
+                label: const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Quiz avec BLoC',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const QuizzApp()),
+                    MaterialPageRoute(
+                      builder: (context) => const ThemeSelectionPageBLoC(),
+                    ),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent,
-                ),
-                label: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Quiz',
-                    style: TextStyle(fontSize: 18, color: textColor),
-                  ),
-                ),
               ),
             ),
           ],

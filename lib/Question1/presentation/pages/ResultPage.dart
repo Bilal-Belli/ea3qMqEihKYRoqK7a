@@ -19,7 +19,7 @@ class ResultPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Results", style: TextStyle(color: Colors.white)),
         centerTitle: true,
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.purpleAccent,
       ),
       body: Center(
         child: Column(
@@ -38,10 +38,9 @@ class ResultPage extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.pinkAccent,
+                backgroundColor: Colors.purpleAccent,
                 minimumSize: const Size(140, 40),
               ),
-              icon: const Icon(Icons.arrow_back, color: Colors.white),
               label: const Text(
                 "Home",
                 style: TextStyle(color: Colors.white),

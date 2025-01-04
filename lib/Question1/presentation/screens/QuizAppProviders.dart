@@ -1,19 +1,18 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'QuizzPage.dart';
+import 'QuizProviders.dart';
 
-class QuizzApp extends StatelessWidget {
-  const QuizzApp({super.key});
+class QuizAppProdivers extends StatelessWidget {
+  const QuizAppProdivers({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Themes', style: TextStyle(color: Colors.white)),
+        title: const Text('Theme', style: TextStyle(color: Colors.white)),
         centerTitle: true,
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.purpleAccent,
       ),
       body: const ThemeSelectionPage(),
     );
@@ -22,7 +21,6 @@ class QuizzApp extends StatelessWidget {
 
 class ThemeSelectionPage extends StatefulWidget {
   const ThemeSelectionPage({super.key});
-
   @override
   ThemeSelectionPageState createState() => ThemeSelectionPageState();
 }
@@ -64,7 +62,7 @@ class ThemeSelectionPageState extends State<ThemeSelectionPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => QuizzPage(theme: themes[index]),
+                      builder: (context) => QuizProviders(theme: themes[index]),
                     ),
                   );
                 },
