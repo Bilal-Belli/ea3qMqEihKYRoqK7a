@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# tp2
-=======
 # Quiz App Mobile
 
 > Une application mobile de quiz interactif permettant aux utilisateurs de tester leurs connaissances sur différents thèmes. L'application propose une sélection de thèmes, un système de quiz à choix vrai/faux, et un calcul du score final.
@@ -19,6 +16,9 @@
 
 ## Demo
 <div align="center">
-  <video src='https://github.com/user-attachments/assets/ffaca8f6-0288-4419-bd94-5e5ba1730337' width="180" />
+  <video src='https://github.com/user-attachments/assets/edac2d15-b46b-494a-9afa-9b775d82cb9a' width="180" />
 </div>
->>>>>>> 2214b361293c2437ace72f5af5683b1a85592fc6
+
+
+
+
