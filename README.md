@@ -10,7 +10,7 @@
 4. Émulateur Android/iOS ou appareil physique
 
 ### Installation
-1. Cloner le repository `git clone https://github.com/Bilal-Belli/AdpLe0agPRYTc.git` puis `cd AdpLe0agPRYTc`
+1. Cloner le repository `git clone https://github.com/Bilal-Belli/ea3qMqEihKYRoqK7a.git` puis `cd AdpLe0agPRYTc`
 2. Installer les dépendances `flutter pub get`
 3. Lancer l'application `flutter run`
 
